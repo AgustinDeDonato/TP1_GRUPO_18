@@ -16,11 +16,19 @@ package Ejercicio1;
 	    }
 	    
 	    public Empleado(String nombre, int edad) {
-	        this.id = contadorID++;
+	        this.id = contador++;
 	        this.nombre = nombre;
 	        this.edad = edad;
 	    }
-
+	    
+	    // Metodo estatico para devolver el proximo id
+	    public static int devuelveProximoID()
+	    {
+	    	return contador+1;
+	    	// Mostrar como (El proximo ID sera el: valor)
+	    }
+	    
+	    // Gets y Sets
 		public static int getContador() {
 			return contador;
 		}
