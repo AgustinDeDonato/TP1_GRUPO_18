@@ -8,15 +8,17 @@ package Ejercicio1;
 	    private String nombre;
 	    private int edad;
 	    
-	    // Constructor
+	    // Constructores
 	    public Empleado() {
-	        this.id = contador++;
+	    	contador++;
+	        this.id = contador;
 	        this.nombre = "sin nombre";
 	        this.edad = 99;
 	    }
 	    
 	    public Empleado(String nombre, int edad) {
-	        this.id = contador++;
+	    	contador++;
+	        this.id = contador;
 	        this.nombre = nombre;
 	        this.edad = edad;
 	    }
@@ -59,12 +61,6 @@ package Ejercicio1;
 
 		
 		public String toString() {
-			return "Empleado [id=" + id + ", nombre=" + nombre + ", edad=" + edad + "]";
+			return "ID: " + id + " - NOMBRE: " + nombre + " - EDAD: " + edad;
 		}
-	    
-	    
-	    
-	    
-	    
-	 
 	}
